@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Modal
+ * # Fomantic-UI 2.9.4 - Modal
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -52,8 +52,8 @@
 
 
 /* --------------
-     Close
---------------- */
+         Close
+    --------------- */
 .ui.modal > .close {
   cursor: pointer;
   position: absolute;
@@ -78,7 +78,7 @@
 --------------- */
 .ui.modal > .header {
   display: block;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background: #fff;
   margin: 0;
   padding: 1.25rem 1.5rem;
@@ -263,7 +263,7 @@
     top: 0.5rem !important;
     right: 0.5rem !important;
   }
-  
+
 /* rtl:ignore */
   .ui.modal .image.content {
     flex-direction: column;
@@ -279,7 +279,7 @@
     font-size: 5rem;
     text-align: center;
   }
-  
+
 /* rtl:ignore */
   .ui.modal > .content > .description {
     display: block;
@@ -288,7 +288,7 @@
     padding: 1rem 0 !important;
     box-shadow: none;
   }
-  
+
 /* Let Buttons Stack */
   .ui.modal > .actions {
     padding: 1rem 1rem 0rem !important;

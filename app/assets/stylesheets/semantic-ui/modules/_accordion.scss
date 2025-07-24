@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Accordion
+ * # Fomantic-UI 2.9.4 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -28,7 +28,7 @@
 .ui.accordion .accordion > .title {
   cursor: pointer;
   padding: 0.5em 0;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1em;
   color: rgba(0, 0, 0, 0.87);
   list-style: none;
@@ -358,7 +358,7 @@
 .ui.accordion .ui.header > .dropdown.icon::before,
 .ui.accordion .title > .dropdown.icon::before,
 .ui.accordion .accordion .title > .dropdown.icon::before {
-  content: "\f0da" 
+  content: "\f0da"
 /* rtl: "\f0d9" */;
 }
 

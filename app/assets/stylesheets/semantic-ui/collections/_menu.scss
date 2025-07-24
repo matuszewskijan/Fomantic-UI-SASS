@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Menu
+ * # Fomantic-UI 2.9.4 - Menu
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -20,7 +20,7 @@
 .ui.menu {
   display: flex;
   margin: 1rem 0;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background: #fff;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -259,10 +259,9 @@
 }
 .ui.vertical.menu .dropdown.item .menu {
   left: 100%;
-  
+
 /* IE needs 0, all others support max-content to show dropdown icon inline, so keep both settings! */
   min-width: 0;
-  min-width: -webkit-max-content;
   min-width: max-content;
   margin: 0 0 0 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -1669,7 +1668,7 @@ Floated Menu / Item
   vertical-align: middle;
 }
 .ui.compact.vertical.menu {
-  
+
 /* IE hack to make dropdown icons appear inline */
   display: -ms-inline-flexbox !important;
   display: inline-block;
