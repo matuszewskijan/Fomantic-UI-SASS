@@ -1,0 +1,8 @@
+/*******************************
+     User Global Variables
+*******************************/
+@fontName          : 'Source Sans Pro';
+@headerFontWeight : @normal;
+@textColor           : #2E384D;
+@darkTextColor               : #2E384D;
+@fontPath: /assets/themes/default/assets/fonts;
