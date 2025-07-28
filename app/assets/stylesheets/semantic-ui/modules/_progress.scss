@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Progress
+ * # Fomantic-UI 2.9.4 - Progress
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -24,6 +24,11 @@
   padding: 0;
   border-radius: 0.28571429rem;
 }
+.ui.basic.progress {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
 .ui.progress:first-child {
   margin: 0 0 2.5em;
 }
@@ -43,18 +48,20 @@
   line-height: 1;
   position: relative;
   width: 0;
-  min-width: 2em;
   background: #888;
   border-radius: 0.28571429rem;
   transition: width 0.1s ease, background-color 0.1s ease;
   overflow: hidden;
 }
-.ui.ui.ui.progress:not([data-percent]):not(.indeterminate) .bar,
-.ui.ui.ui.progress[data-percent="0"]:not(.indeterminate) .bar {
+.ui.progress .bar:not(:empty) {
+  min-width: 2.5em;
+}
+.ui.ui.ui.progress:not([data-percent]):not(.indeterminate) .bar:not(:empty),
+.ui.ui.ui.progress[data-percent="0"]:not(.indeterminate) .bar:not(:empty) {
   background: transparent;
 }
 .ui.progress[data-percent="0"] .bar .progress {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.inverted.progress[data-percent="0"] .bar .progress {
   color: rgba(255, 255, 255, 0.9);
@@ -93,7 +100,7 @@
   right: auto;
   left: 0;
   bottom: auto;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   font-weight: bold;
   text-shadow: none;
   margin-top: 0.2em;
@@ -134,25 +141,25 @@
 /* Indicating Label */
 .ui.indicating.progress[data-percent^="1"] .label,
 .ui.indicating.progress[data-percent^="2"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.indicating.progress[data-percent^="3"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.indicating.progress[data-percent^="4"] .label,
 .ui.indicating.progress[data-percent^="5"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.indicating.progress[data-percent^="6"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.indicating.progress[data-percent^="7"] .label,
 .ui.indicating.progress[data-percent^="8"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.indicating.progress[data-percent^="9"] .label,
 .ui.indicating.progress[data-percent^="100"] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* Inverted Indicating Label */
@@ -220,7 +227,7 @@
 .ui.indicating.progress[data-percent^="8."] .label,
 .ui.indicating.progress[data-percent="9"] .label,
 .ui.indicating.progress[data-percent^="9."] .label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.inverted.indicating.progress[data-percent="0"] .label,
 .ui.inverted.indicating.progress[data-percent^="0."] .label,
@@ -303,7 +310,9 @@
     --------------- */
 .ui.active.progress .bar {
   position: relative;
-  min-width: 2em;
+}
+.ui.active.progress .bar:not(:empty) {
+  min-width: 2.5em;
 }
 .ui.active.progress .bar::after {
   content: "";
@@ -352,7 +361,7 @@
 /* --------------
         Inverted
     --------------- */
-.ui.inverted.progress {
+.ui.inverted.progress:not(.basic) {
   background: rgba(255, 255, 255, 0.08);
   border: none;
 }

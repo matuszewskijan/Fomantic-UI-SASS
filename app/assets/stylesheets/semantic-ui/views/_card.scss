@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Card
+ * # Fomantic-UI 2.9.4 - Card
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -146,8 +146,8 @@
 .ui.card > .content > .header {
   display: block;
   margin: "";
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: rgba(0, 0, 0, 0.85);
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #2E384D;
 }
 
 /* Default Header Size */
@@ -272,7 +272,7 @@
 /* Header */
 .ui.cards > .card > .content > a.header,
 .ui.card > .content > a.header {
-  color: rgba(0, 0, 0, 0.85);
+  color: #2E384D;
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
@@ -286,7 +286,7 @@
 }
 .ui.cards > .card .meta > a:not(.ui):hover,
 .ui.card .meta > a:not(.ui):hover {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* --------------
@@ -1876,6 +1876,6 @@ a.inverted.ui.card:hover,
 
 
 /*******************************
-    User Variable Overrides
+         Site Overrides
 *******************************/
 

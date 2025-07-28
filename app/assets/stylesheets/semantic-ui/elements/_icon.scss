@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Icon
+ * # Fomantic-UI 2.9.4 - Icon
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "icons";
-  src: font-url("semantic-ui/icons.woff2") format("woff2") , font-url("semantic-ui/icons.woff") format("woff");
+  src: url("/assets/themes/default/assets/fonts/icons.woff2") format("woff2") , url("/assets/themes/default/assets/fonts/icons.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   font-display: block;
@@ -25,7 +25,7 @@
 }
 @font-face {
   font-family: "outline-icons";
-  src: font-url("semantic-ui/outline-icons.woff2") format("woff2") , font-url("semantic-ui/outline-icons.woff") format("woff");
+  src: url("/assets/themes/default/assets/fonts/outline-icons.woff2") format("woff2") , url("/assets/themes/default/assets/fonts/outline-icons.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   font-display: block;
@@ -35,7 +35,7 @@
 }
 @font-face {
   font-family: "brand-icons";
-  src: font-url("semantic-ui/brand-icons.woff2") format("woff2") , font-url("semantic-ui/brand-icons.woff") format("woff");
+  src: url("/assets/themes/default/assets/fonts/brand-icons.woff2") format("woff2") , url("/assets/themes/default/assets/fonts/brand-icons.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   font-display: block;

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Statistic
+ * # Fomantic-UI 2.9.4 - Statistic
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -79,7 +79,7 @@
 --------------- */
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -93,10 +93,10 @@
 --------------- */
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   text-transform: uppercase;
   text-align: center;
 }
@@ -581,6 +581,6 @@
 
 
 /*******************************
-    User Variable Overrides
+         Site Overrides
 *******************************/
 

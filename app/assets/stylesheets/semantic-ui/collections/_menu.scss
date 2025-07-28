@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Menu
+ * # Fomantic-UI 2.9.4 - Menu
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -20,7 +20,7 @@
 .ui.menu {
   display: flex;
   margin: 1rem 0;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background: #fff;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -72,7 +72,7 @@
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   font-weight: normal;
   transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
 }
@@ -203,7 +203,7 @@
   font-size: 1em !important;
   padding: 0.78571429em 1.14285714em !important;
   background: transparent !important;
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #2E384D !important;
   text-transform: none !important;
   font-weight: normal !important;
   box-shadow: none !important;
@@ -262,7 +262,6 @@
   
 /* IE needs 0, all others support max-content to show dropdown icon inline, so keep both settings! */
   min-width: 0;
-  min-width: -webkit-max-content;
   min-width: max-content;
   margin: 0 0 0 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -551,7 +550,7 @@ Floated Menu / Item
 }
 .ui.vertical.menu .item .menu a.item:hover,
 .ui.vertical.menu .item .menu .link.item:hover {
-  color: rgba(0, 0, 0, 0.85);
+  color: #2E384D;
 }
 .ui.vertical.menu .menu .item::before {
   display: none;
@@ -601,7 +600,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.tabular.menu .item::before {
   display: none;
@@ -918,7 +917,7 @@ Floated Menu / Item
 
 /* Item Types */
 .ui.secondary.pointing.menu .header.item {
-  color: rgba(0, 0, 0, 0.85) !important;
+  color: #2E384D !important;
 }
 .ui.secondary.pointing.menu .text.item {
   box-shadow: none !important;
@@ -932,7 +931,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* Pressed */
@@ -1035,7 +1034,7 @@ Floated Menu / Item
 .ui.text.menu .header.item {
   background-color: transparent;
   opacity: 1;
-  color: rgba(0, 0, 0, 0.85);
+  color: #2E384D;
   font-size: 0.92857143em;
   text-transform: uppercase;
   font-weight: bold;

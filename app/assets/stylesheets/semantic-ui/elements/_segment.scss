@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Segment
+ * # Fomantic-UI 2.9.4 - Segment
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -172,7 +172,7 @@
   z-index: auto;
   background-color: #fff;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.piled.segment:first-child {
   margin-top: 0;
@@ -732,7 +732,7 @@
 
 /* Nested */
 .ui.inverted.segment .segment {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.inverted.segment .inverted.segment {
   color: rgba(255, 255, 255, 0.9);

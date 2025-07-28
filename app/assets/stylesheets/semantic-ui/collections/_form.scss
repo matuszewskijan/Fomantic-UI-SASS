@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Form
+ * # Fomantic-UI 2.9.4 - Form
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -57,7 +57,7 @@
   text-transform: none;
 }
 .ui.form:not(.inverted) .field > label:not(.button) {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* --------------------
@@ -103,7 +103,7 @@
 .ui.form input[type="file"],
 .ui.form input[type="url"],
 .ui.form input[type="week"] {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 0;
   outline: none;
   -webkit-appearance: none;
@@ -113,7 +113,7 @@
   font-size: 1em;
   background: #fff;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   border-radius: 0.28571429rem;
   box-shadow: 0 0 0 0 transparent inset;
   transition: color 0.1s ease, border-color 0.1s ease;
@@ -139,14 +139,19 @@
   background: #fff;
   border: 1px solid rgba(34, 36, 38, 0.15);
   outline: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   border-radius: 0.28571429rem;
   box-shadow: 0 0 0 0 transparent inset;
   transition: color 0.1s ease, border-color 0.1s ease;
   font-size: 1em;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.2857;
   resize: vertical;
+  min-height: 2.99992857em;
+}
+.ui.input > textarea {
+  flex: 1 1 auto;
+  max-width: 100%;
 }
 .ui.form textarea:not([rows]) {
   height: 12em;
@@ -217,7 +222,7 @@
   border-radius: 0.28571429rem;
   box-shadow: 0 0 0 0 transparent inset;
   padding: 0.62em 1em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   transition: color 0.1s ease, border-color 0.1s ease;
 }
 
@@ -264,8 +269,10 @@
 
 /* Auto Input */
 .ui.form .fields .field .ui.input input,
-.ui.form .field .ui.input input {
-  width: auto;
+.ui.form .fields .field .ui.input textarea,
+.ui.form .field .ui.input input,
+.ui.form .field .ui.input textarea {
+  width: 100%;
 }
 
 /* Full Width Input */
@@ -360,28 +367,28 @@
 
 /* browsers require these rules separate */
 .ui.form :-ms-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: #fcfdfd;
 }
 .ui.form ::-ms-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: #fcfdfd;
 }
 .ui.form ::placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: #fcfdfd;
 }
 .ui.form :-ms-input-placeholder {
-  color: rgba(191, 191, 191, 0.87) !important;
+  color: #fcfdfd !important;
 }
 .ui.form :focus:-ms-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: #9ca9c4;
 }
 .ui.form :focus::-ms-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: #9ca9c4;
 }
 .ui.form :focus::placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: #9ca9c4;
 }
 .ui.form :focus:-ms-input-placeholder {
-  color: rgba(115, 115, 115, 0.87) !important;
+  color: #9ca9c4 !important;
 }
 
 /* --------------------
@@ -422,7 +429,8 @@
 .ui.form .ui.action.input:not([class*="left action"]) input[type="text"]:focus,
 .ui.form .ui.action.input:not([class*="left action"]) input[type="file"]:focus,
 .ui.form .ui.action.input:not([class*="left action"]) input[type="url"]:focus,
-.ui.form .ui.action.input:not([class*="left action"]) input[type="week"]:focus {
+.ui.form .ui.action.input:not([class*="left action"]) input[type="week"]:focus,
+.ui.form .ui.action.input:not([class*="left action"]) textarea:focus {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -440,7 +448,8 @@
 .ui.form .ui[class*="left action"].input input[type="text"],
 .ui.form .ui[class*="left action"].input input[type="file"],
 .ui.form .ui[class*="left action"].input input[type="url"],
-.ui.form .ui[class*="left action"].input input[type="week"] {
+.ui.form .ui[class*="left action"].input input[type="week"],
+.ui.form .ui[class*="left action"].input textarea {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -577,6 +586,10 @@
   color: #9f3a38;
   box-shadow: none;
 }
+.ui.form .field.error > textarea:hover:not(:focus),
+.ui.form .field.error > input:hover:not(:focus) {
+  border-color: #e0b4b4;
+}
 
 /* Preserve Native Select Stylings */
 .ui.form .field.error select {
@@ -610,6 +623,7 @@
 .ui.form .error ::-ms-input-placeholder {
   color: #e7bdbc;
 }
+.ui.form .error .ui.dropdown > .default.text,
 .ui.form .error ::placeholder {
   color: #e7bdbc;
 }
@@ -622,6 +636,7 @@
 .ui.form .error :focus::-ms-input-placeholder {
   color: #da9796;
 }
+.ui.form .error .ui.dropdown > input:focus ~ .default.text,
 .ui.form .error :focus::placeholder {
   color: #da9796;
 }
@@ -812,6 +827,10 @@
   color: #276f86;
   box-shadow: none;
 }
+.ui.form .field.info > textarea:hover:not(:focus),
+.ui.form .field.info > input:hover:not(:focus) {
+  border-color: #a9d5de;
+}
 
 /* Preserve Native Select Stylings */
 .ui.form .field.info select {
@@ -845,6 +864,7 @@
 .ui.form .info ::-ms-input-placeholder {
   color: #98cfe1;
 }
+.ui.form .info .ui.dropdown > .default.text,
 .ui.form .info ::placeholder {
   color: #98cfe1;
 }
@@ -857,6 +877,7 @@
 .ui.form .info :focus::-ms-input-placeholder {
   color: #70bdd6;
 }
+.ui.form .info .ui.dropdown > input:focus ~ .default.text,
 .ui.form .info :focus::placeholder {
   color: #70bdd6;
 }
@@ -1047,6 +1068,10 @@
   color: #2c662d;
   box-shadow: none;
 }
+.ui.form .field.success > textarea:hover:not(:focus),
+.ui.form .field.success > input:hover:not(:focus) {
+  border-color: #a3c293;
+}
 
 /* Preserve Native Select Stylings */
 .ui.form .field.success select {
@@ -1080,6 +1105,7 @@
 .ui.form .success ::-ms-input-placeholder {
   color: #8fcf90;
 }
+.ui.form .success .ui.dropdown > .default.text,
 .ui.form .success ::placeholder {
   color: #8fcf90;
 }
@@ -1092,6 +1118,7 @@
 .ui.form .success :focus::-ms-input-placeholder {
   color: #6cbf6d;
 }
+.ui.form .success .ui.dropdown > input:focus ~ .default.text,
 .ui.form .success :focus::placeholder {
   color: #6cbf6d;
 }
@@ -1282,6 +1309,10 @@
   color: #573a08;
   box-shadow: none;
 }
+.ui.form .field.warning > textarea:hover:not(:focus),
+.ui.form .field.warning > input:hover:not(:focus) {
+  border-color: #c9ba9b;
+}
 
 /* Preserve Native Select Stylings */
 .ui.form .field.warning select {
@@ -1315,6 +1346,7 @@
 .ui.form .warning ::-ms-input-placeholder {
   color: #edad3e;
 }
+.ui.form .warning .ui.dropdown > .default.text,
 .ui.form .warning ::placeholder {
   color: #edad3e;
 }
@@ -1327,6 +1359,7 @@
 .ui.form .warning :focus::-ms-input-placeholder {
   color: #e39715;
 }
+.ui.form .warning .ui.dropdown > input:focus ~ .default.text,
 .ui.form .warning :focus::placeholder {
   color: #e39715;
 }
@@ -1497,10 +1530,13 @@
   top: 0;
   left: 100%;
 }
-.ui.ui.ui.ui.form .fields > label:empty::after,
-.ui.ui.ui.ui.form .field > label:empty::after {
+.ui.ui.ui.ui.form .fields:not(.required) > label:empty::after,
+.ui.ui.ui.ui.form .fields:not(.grouped):not(.inline) > .field:not(.required) > label:empty::after {
   content: " ";
   display: inline-block;
+}
+.ui.ui.ui.ui.form .inline.fields .field:not(.required) > label:empty {
+  display: none;
 }
 
 
@@ -1516,6 +1552,7 @@
 .ui.form .inverted.segment label,
 .ui.form .inverted.segment .ui.checkbox label,
 .ui.inverted.form .ui.checkbox label,
+.ui.inverted.form .grouped.fields > label,
 .ui.inverted.form .inline.fields > label,
 .ui.inverted.form .inline.fields .field > label,
 .ui.inverted.form .inline.fields .field > p,
@@ -1548,7 +1585,7 @@
 .ui.inverted.form input[type="week"] {
   background: #fff;
   border-color: rgba(255, 255, 255, 0.1);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   box-shadow: none;
 }
 
@@ -1566,7 +1603,7 @@
 }
 .ui.form .grouped.fields > label {
   margin: 0 0 0.28571429rem 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   font-size: 0.92857143em;
   font-weight: bold;
   text-transform: none;
@@ -1741,7 +1778,7 @@
   vertical-align: baseline;
   font-size: 0.92857143em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   text-transform: none;
 }
 

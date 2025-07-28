@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Accordion
+ * # Fomantic-UI 2.9.4 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -28,9 +28,9 @@
 .ui.accordion .accordion > .title {
   cursor: pointer;
   padding: 0.5em 0;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Sans Pro', system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
   list-style: none;
   line-height: 1;
 }
@@ -149,11 +149,11 @@
 /* Hover */
 .ui.styled.accordion > .title:hover {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.styled.accordion .accordion > .title:hover {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* Active */
@@ -293,7 +293,7 @@
 .ui.basic.styled.accordion > .title:hover,
 .ui.basic.styled.accordion .accordion > .title:hover {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 .ui.basic.styled.accordion[open] > .title,
 .ui.basic.styled.accordion .active.title,

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.9.3 - Feed
+ * # Fomantic-UI 2.9.4 - Feed
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -135,7 +135,7 @@
   margin: 0;
   font-size: 1em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* Summary Image */
@@ -189,7 +189,7 @@
   margin: 0.5em 0 0;
   background: none;
   padding: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2E384D;
 }
 
 /* Images */
@@ -399,6 +399,17 @@
 }
 .ui.inverted.feed > .event > .content .meta .active.like i.icon {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Action */
+.ui.inverted.feed > .event > .content .meta a,
+.ui.inverted.feed > .event > .content .meta > i.icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+.ui.inverted.feed > .event > .content .meta a:hover,
+.ui.inverted.feed > .event > .content .meta a:hover i.icon,
+.ui.inverted.feed > .event > .content .meta > i.icon:hover {
+  color: #ffffff;
 }
 
 /* --------------
@@ -783,6 +794,6 @@
 
 
 /*******************************
-    User Variable Overrides
+         Site Overrides
 *******************************/
 
