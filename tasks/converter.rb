@@ -120,6 +120,7 @@ class Converter
 
   def convert(file)
     file = replace_fonts_url(file)
+    file = replace_icons_fonts_url(file)
     file = replace_import_font_url(file)
     file = replace_font_family(file)
     file = replace_image_urls(file)
@@ -153,6 +154,10 @@ class Converter
 
   def replace_fonts_url(less)
     less.gsub(%r{url\("\./\.\./themes/default/assets/fonts/?(.*?)"\)}) { |_s| "font-url(\"semantic-ui/#{Regexp.last_match(1)}\")" }
+  end
+
+  def replace_icons_fonts_url(less)
+    less.gsub(%r{url\("/assets/themes/default/assets/fonts/?(.*?)"\)}) { |_s| "font-url(\"semantic-ui/#{Regexp.last_match(1)}\")" }
   end
 
   def replace_font_family(less)
