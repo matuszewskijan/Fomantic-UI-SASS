@@ -1,8 +1,18 @@
+# Why I forked this Gem
+
+At my current workplace we are using Fomantic UI, but we want to slightly customize it through `site.variables`.
+In this fork we're copying `theme.config` and `site.variables` into Semantic UI source, then we're running `npx gulp build` to build Fomantic with our own config and variables. All of it's is done while running:
+```
+rake convert
+```
+
+this command should be used when we want to update Fomantic UI.
+
 # Fomantic UI for Sass
 
 `fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Fomantic-UI) and ready to drop into Rails, Compass, or Sprockets.
 It was forked from [`semantic-ui-sass`](https://github.com/doabit/semantic-ui-sass) to track Fomantic UI, a community fork of Semantic UI,
-and is intended to be a drop-in replacement. The project keeps references to Semantic UI for that reason and because Fomantic UI intends to 
+and is intended to be a drop-in replacement. The project keeps references to Semantic UI for that reason and because Fomantic UI intends to
 merge back into Semantic UI once active development of Semantic begins again.
 
 [![Gem Version](https://badge.fury.io/rb/fomantic-ui-sass.svg)](https://badge.fury.io/rb/fomantic-ui-sass)

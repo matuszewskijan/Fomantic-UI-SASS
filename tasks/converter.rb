@@ -50,6 +50,11 @@ class Converter
     else
       system %(git clone --quiet git@github.com:fomantic/Fomantic-UI.git '#{paths.tmp_semantic_ui}')
     end
+
+    system("cp #{paths.tmp_semantic_ui}/semantic.json.example #{paths.tmp_semantic_ui}/semantic.json")
+    system("cp ./tasks/site.variables #{paths.tmp_semantic_ui_src}/site/globals/site.variables")
+    system("cp ./tasks/theme.config #{paths.tmp_semantic_ui_src}/theme.config")
+    system %(cd '#{paths.tmp_semantic_ui_src}' && npx gulp build)
   end
 
   def choose_version(version)
